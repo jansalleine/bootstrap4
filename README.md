@@ -15,6 +15,7 @@ because that is the one I use in my projects. See: `./build/js/`
 
  - node.js v20.9.0
  - npm v10.1.0
+ - grunt-cli v1.2.0 : `npm install -g grunt-cli`
 
 ## Building
 
