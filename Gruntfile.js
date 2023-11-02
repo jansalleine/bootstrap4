@@ -44,5 +44,5 @@ module.exports = function(grunt)
         }
     });
 
-    grunt.registerTask("default", ["sass", "watch", "run:copyvars"]);
+    grunt.registerTask("default", ["sass", "run:copyvars", "watch"]);
 };
