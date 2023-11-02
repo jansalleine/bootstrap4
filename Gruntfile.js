@@ -14,7 +14,7 @@ module.exports = function(grunt)
                     outputStyle: "compressed"
                 },
                 files: {
-                    "./build/bootstrap4.css":  "bootstrap4.scss"
+                    "./build/css/bootstrap4.css":  "bootstrap4.scss"
                 }
             }
         },
@@ -25,9 +25,24 @@ module.exports = function(grunt)
                 options: {
                     spawn: true
                 }
+            },
+            scripts: {
+                files: ["copyvars.js"],
+                tasks: ["run:copyvars"],
+                options: {
+                    spawn: true
+                }
+            }
+        },
+        run: {
+            options: {
+
+            },
+            copyvars: {
+                exec: "npm run copyvars"
             }
         }
     });
 
-    grunt.registerTask("default", ["sass", "watch"]);
+    grunt.registerTask("default", ["sass", "watch", "run:copyvars"]);
 };

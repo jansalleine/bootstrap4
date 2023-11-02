@@ -4,13 +4,15 @@
   "description": "Bootstrap4 4.6.2 fork with sass fixes",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copyvars": "node copyvars.js"
   },
   "author": "Jan Wassermann",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.6.1",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-run": "^0.8.1",
     "grunt-sass": "^3.1.0",
     "jit-grunt": "^0.10.0",
     "sass": "^1.69.5"
