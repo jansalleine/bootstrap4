@@ -11,7 +11,8 @@ module.exports = function(grunt)
                     implementation: sass,
                     sourceMap: true,
                     sourceMapContents: true,
-                    outputStyle: "compressed"
+                    outputStyle: "compressed",
+                    api: "modern"
                 },
                 files: {
                     "./build/css/bootstrap4.css":  "bootstrap4.scss"
@@ -44,5 +45,6 @@ module.exports = function(grunt)
         }
     });
 
+    grunt.loadNpmTasks('grunt-sass-modern');
     grunt.registerTask("default", ["sass", "run:copyvars", "watch"]);
 };
