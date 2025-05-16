@@ -10,6 +10,7 @@ module.exports = function(grunt)
                 options: {
                     implementation: sass,
                     sourceMap: true,
+                    sourceMapIncludeSources: true,
                     style: "compressed",
                     api: "modern",
                     silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
