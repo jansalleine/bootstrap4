@@ -10,9 +10,9 @@ module.exports = function(grunt)
                 options: {
                     implementation: sass,
                     sourceMap: true,
-                    sourceMapContents: true,
-                    outputStyle: "compressed",
-                    api: "modern"
+                    style: "compressed",
+                    api: "modern",
+                    silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
                 },
                 files: {
                     "./build/css/bootstrap4.css":  "bootstrap4.scss"
